@@ -1,6 +1,8 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
+import Root from './components/Root';
 
-const App = () => <h1>Hello, World!</h1>;
+import store from './configureStore';
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+
+ReactDOM.render(<Root store={store} />, document.querySelector('#app'));
