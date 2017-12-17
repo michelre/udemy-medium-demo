@@ -7,6 +7,7 @@ class App extends React.Component{
     return <div>
       <h1>Hello, World!</h1>
       <p>Hello Body</p>
+      <i className="fa fa-search" />
     </div>
   }
 }
