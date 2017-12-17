@@ -2,6 +2,7 @@ module.exports = {
   entry: `${__dirname}/web/index.js`,
   output: {
     path: `${__dirname}/dist`,
+    publicPath: "/dist/",
     filename: 'bundle.js'
   },
   module: {
@@ -20,6 +21,10 @@ module.exports = {
         }, {
           loader: "sass-loader" // compiles Sass to CSS
         }]
+      },
+      {
+        test: /\.(eot|ttf|svg|woff|woff2)$/,
+        use: [{ loader: "file-loader" }]
       }
     ]
   }

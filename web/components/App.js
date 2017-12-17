@@ -4,8 +4,10 @@ import { connect } from 'react-redux';
 class App extends React.Component{
 
   render(){
-    console.log(this.props);
-    return <h1>Hello, World!</h1>
+    return <div>
+      <h1>Hello, World!</h1>
+      <p>Hello Body</p>
+    </div>
   }
 }
 
